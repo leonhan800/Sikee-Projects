@@ -72,7 +72,7 @@
 }
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1,  h3, h4, h5, h6, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -83,11 +83,36 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
+	padding:0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+display:inline;
+
+}
+h3{
+	padding-right: 70px;
+	padding-top: 28px;
+	color: #000000;
+	font-weight: 500;
+	float:right;
+	
+}
+
+
+
+p, h2 {
+	font-weight: 700;
+	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+
+}
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -164,7 +189,10 @@ input, select, textarea {
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
+water{
+	opacity: 0.6;
 
+}
 	body {
 		background: url("sikee_tabs.png");
 	}
@@ -216,7 +244,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+	
 		color: #34a58e;
 		text-decoration: none;
 	}
@@ -239,14 +267,47 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
-		font-weight: 300;
+	h1, h4, h5, h6  {
+		color: #000000;
+		font-weight: 500;
 		letter-spacing: 0.1em;
-		line-height: 1.5;
-		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		
+	font-family:sans-serif;
+
+		margin: 0 0 0.5em 0;
+		text-transform: capitalize;
+		
+
+	
+		
 	}
+
+	h3 li{
+		color: #000000;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+		
+	font-family:sans-serif;
+	display:inline;
+
+		margin: 0 0 0.5em 0;
+		text-transform: capitalize;
+		
+	}
+
+	h2 {
+		color: #ffffff;
+		font-weight: 900;
+		font-size: larger;
+		letter-spacing: 0.1em;
+		line-height: 0;
+		margin: 0 0 0.5em 0;
+		text-transform: capitalize;
+		
+
+	}
+
+	
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -264,7 +325,7 @@ font-weight: bolder;
 
 	h3 {
 	
-		font-size: 1.1em;
+		font-size: 1em;
 	}
 
 	h4 {
@@ -282,7 +343,7 @@ font-weight: bolder;
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1em;
+			font-size: 2em;
 		}
 
 		h3 {
@@ -798,6 +859,7 @@ font-weight: bolder;
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+		display:inline;
 	}
 
 		ol li {
@@ -1619,7 +1681,10 @@ font-weight: bolder;
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
+			
 		}
+	
+
 
 			#main .thumb:after {
 				background-image: -moz-linear-gradient(to top, rgba(10,17,25,0.35) 5%, rgba(10,17,25,0) 35%);
@@ -1637,6 +1702,7 @@ font-weight: bolder;
 				width: 100%;
 			}
 
+
 			#main .thumb > .image {
 				-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 				background-position: center;
@@ -1653,7 +1719,7 @@ font-weight: bolder;
 			#main .thumb > h2 {
 				pointer-events: none;
 				bottom: 1.875em;
-				font-size: 1.2em;
+				font-size: 1.4em;
 				left: 2.1875em;
 				margin: 0;
 				position: absolute;
